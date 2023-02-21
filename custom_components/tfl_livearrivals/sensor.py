@@ -69,9 +69,9 @@ class TFLScheduleCoordinator(DataUpdateCoordinator):
                 and (time.time() - self.last_data_refresh) > 5 * 60
             )
             or (
-                self.data["next_bus_scheduled"] is not None
-                and datetime.now(self.data["next_bus_scheduled"].tzinfo)
-                >= self.data["next_bus_scheduled"] - timedelta(minutes=1)
+                self.data["next_bus_expected"] is not None
+                and datetime.now(self.data["next_bus_expected"].tzinfo)
+                >= self.data["next_bus_expected"] - timedelta(minutes=1)
             )
         ):
             # try:
