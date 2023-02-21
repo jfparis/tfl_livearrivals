@@ -1,0 +1,14 @@
+{
+    "domain": "tfl_livearrivals",
+    "name": "Transport for London: Live arrivals",
+    "config_flow": true,
+    "documentation": "https://www.home-assistant.io/integrations/rfl_livearrivals",
+    "requirements": ["aiohttp"],
+    "ssdp": [],
+    "zeroconf": [],
+    "homekit": {},
+    "dependencies": [],
+    "version": "0.0.1",
+    "codeowners": ["@jfparis"],
+    "iot_class": "cloud_polling"
+}

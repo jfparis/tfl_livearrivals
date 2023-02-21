@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "title": "Monitor live arrivals at a station",
+                "description": "Choose the lines you want to monnitor",
+                "data": {
+                    "api_token": "Tfl API Token",
+                    "lines": "Bus lines, as a comma separated list",
+                    "bus_stop_id": "Bus stop ID"
+                }
+            }
+        }
+    }
+}
