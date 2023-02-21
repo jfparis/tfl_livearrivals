@@ -51,9 +51,6 @@ class TFLClient:
             if station_name is None:
                 station_name = each["stationName"]
             departure["destination"] = each["destinationName"]
-            departure["scheduled_time"] = datetime.fromisoformat(
-                each["expectedArrival"].replace("Z", "+00:00")
-            )
             departure["expected_time"] = datetime.fromisoformat(
                 each["timeToLive"].replace("Z", "+00:00")
             )
@@ -61,6 +58,13 @@ class TFLClient:
             status["departures"].append(departure)
 
         status["station"] = station_name
+        status["departures"] = sorted(
+            status["departures"],
+            key=lambda d: d["expected_time"]
+            # if isinstance(d["expected"], datetime)
+            # else d["scheduled"],
+        )
+
         return status
 
     async def async_get_data(self):

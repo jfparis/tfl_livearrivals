@@ -103,12 +103,10 @@ class TFLScheduleCoordinator(DataUpdateCoordinator):
             data["friendly_name"] = self.friendly_name
 
             if len(data["departures"]) > 0:
-                data["next_bus_scheduled"] = data["departures"][0]["scheduled_time"]
                 data["next_bus_expected"] = data["departures"][0]["expected_time"]
                 data["destination"] = data["departures"][0]["destination"]
                 data["line"] = data["departures"][0]["line"]
             else:
-                data["next_bus_scheduled"] = None
                 data["next_bus_expected"] = None
                 data["destination"] = None
                 data["line"] = None
