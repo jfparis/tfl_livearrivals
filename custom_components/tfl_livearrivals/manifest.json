@@ -2,7 +2,7 @@
     "domain": "tfl_livearrivals",
     "name": "Transport for London: Live arrivals",
     "config_flow": true,
-    "documentation": "https://www.home-assistant.io/integrations/rfl_livearrivals",
+    "documentation": "https://github.com/jfparis/tfl_livearrivals",
     "requirements": ["aiohttp"],
     "ssdp": [],
     "zeroconf": [],
