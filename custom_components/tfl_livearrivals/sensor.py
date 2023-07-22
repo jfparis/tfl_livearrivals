@@ -1,12 +1,11 @@
 """Platform for sensor integration."""
 from __future__ import annotations
 
-from datetime import datetime, timedelta
 import logging
 import time
+from datetime import datetime, timedelta
 
 import async_timeout
-
 from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity,
     DataUpdateCoordinator,

@@ -1,6 +1,6 @@
 """Client for the TFL live bus arrival APU"""
-from datetime import datetime
 import logging
+from datetime import datetime
 
 import aiohttp
 
