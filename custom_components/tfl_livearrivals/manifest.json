@@ -3,12 +3,13 @@
     "name": "Transport for London: Live arrivals",
     "config_flow": true,
     "documentation": "https://github.com/jfparis/tfl_livearrivals",
+    "issue_tracker": "https://github.com/jfparis/tfl_livearrivals/issues",
     "requirements": ["aiohttp"],
     "ssdp": [],
     "zeroconf": [],
     "homekit": {},
     "dependencies": [],
-    "version": "0.0.1",
+    "version": "0.1.0",
     "codeowners": ["@jfparis"],
     "iot_class": "cloud_polling"
 }
