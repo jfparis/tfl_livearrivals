@@ -1,3 +1,9 @@
+# DISCONTINUED
+
+There is another integration with a superior config flow. I would recommend you have a look
+
+https://github.com/morosanmihail/HA-LondonTfL
+
 # tfl_livearrivals
 
 Provides live bus timings from Transport for London for London buses.
